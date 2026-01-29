@@ -1,0 +1,62 @@
+/* Global Styles */
+body { 
+    font-family: sans-serif; 
+    line-height: 1.6; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    color: #333;
+}
+
+/* Navigation Bar */
+nav { 
+    background: #00274c; 
+    padding: 15px; 
+    margin-bottom: 20px; 
+    border-radius: 4px;
+}
+
+nav a { 
+    color: white; 
+    margin-right: 20px; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Page Components */
+.content-box, .download-box, .project-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.download-box { 
+    background: #f0f7ff; 
+    border: 2px solid #00274c; 
+    margin-top: 30px; 
+}
+
+.project-card { 
+    border-left: 5px solid #00274c; 
+    background: #fafafa; 
+}
+
+/* Button Style */
+.btn { 
+    background: #28a745; 
+    color: white; 
+    padding: 12px 20px; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    display: inline-block; 
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #218838;
+}
