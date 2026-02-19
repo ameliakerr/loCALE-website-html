@@ -1,35 +1,234 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>LoCALE - About</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LoCALE — Local Crime and Law Enforcement Project</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <a href="index.html">About</a>
-        <a href="team.html">Team</a>
-        <a href="data.html">Data & Access</a>
-        <a href="projects.html">Projects</a>
-        <a href="funding.html">Funding</a>
-        <a href="faq.html">FAQ</a>
-        <a href="contact.html">Contact</a>
-    </nav>
 
-    <h1>The LoCALE Project</h1>
-    <div class="content-box">
-        <h2>About the Project</h2>
-        <p>The Local Crime and Law Enforcement Project (LoCALE) is a national database compiling micro-level arrest, incident, and dispatch records from thousands of cities across the United States. Designed for researchers and policymakers, LoCALE provides a more comprehensive and granular view of public safety activity than existing crime data sources.</p>
-        <p>Current crime datasets face significant limitations: coverage is often restricted to select jurisdictions, data rarely extends below the city level, low-level offenses such as theft are frequently excluded, offender characteristics are limited, and there is no centralized source for dispatch data. These gaps constrain rigorous research and evidence-based policymaking.</p>
-        <p>LoCALE addresses these shortcomings by expanding geographic coverage to the census tract level, incorporating both high- and low-level offenses, and including richer information on offender characteristics. It is also the first centralized source for dispatch data across jurisdictions, enabling new lines of inquiry into law enforcement response.</p>
-        <p>By integrating arrest, incident, and dispatch records into a unified framework, LoCALE aims to support more precise measurement, deeper analysis, and more informed public policy.</p>
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <span class="nav-brand">Lo<span>CALE</span></span>
+      <a href="index.html" class="nav-link active">About</a>
+      <a href="team.html" class="nav-link">Team</a>
+      <a href="data.html" class="nav-link">Data &amp; Access</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="funding.html" class="nav-link">Funding</a>
+      <a href="faq.html" class="nav-link">FAQ</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Local Crime &amp; Law Enforcement Project</p>
+      <h1>A National Database for<br>Public Safety Research</h1>
+      <p class="hero-sub">LoCALE compiles micro-level arrest, incident, and dispatch records from thousands of cities across the United States — giving researchers and policymakers unprecedented granularity.</p>
+      <a href="data.html" class="hero-cta">Access the Data →</a>
+    </div>
+  </section>
+
+  <!-- STAT BAR -->
+  <div class="stat-bar">
+    <div class="stat-bar-inner">
+      <div class="stat-item">
+        <span class="stat-number">1,000s</span>
+        <span class="stat-label">Cities Covered</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">3</span>
+        <span class="stat-label">Record Types</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">Tract</span>
+        <span class="stat-label">Geographic Resolution</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">ICPSR</span>
+        <span class="stat-label">Data Host</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT SECTION -->
+  <div class="main-content">
+    <div class="content-card">
+      <p class="section-label">About the Project</p>
+      <h2>What is LoCALE?</h2>
+      <p>The Local Crime and Law Enforcement Project (LoCALE) is a national database compiling micro-level arrest, incident, and dispatch records from thousands of cities across the United States. Designed for researchers and policymakers, LoCALE provides a more comprehensive and granular view of public safety activity than existing crime data sources.</p>
+      <p>Current crime datasets face significant limitations: coverage is often restricted to select jurisdictions, data rarely extends below the city level, low-level offenses such as theft are frequently excluded, offender characteristics are limited, and there is no centralized source for dispatch data. These gaps constrain rigorous research and evidence-based policymaking.</p>
+      <p>LoCALE addresses these shortcomings by expanding geographic coverage to the census tract level, incorporating both high- and low-level offenses, and including richer information on offender characteristics. It is also the first centralized source for dispatch data across jurisdictions, enabling new lines of inquiry into law enforcement response.</p>
+      <p>By integrating arrest, incident, and dispatch records into a unified framework, LoCALE aims to support more precise measurement, deeper analysis, and more informed public policy.</p>
     </div>
 
-    <footer>
-        <div class="logos">
-            <img src="ucla-logo.png" alt="UCLA">
-            <img src="economics-logo.png" alt="Economics Department">
+    <!-- COVERAGE MAP PLACEHOLDER -->
+    <div class="visual-section">
+      <p class="section-label">Geographic Coverage</p>
+      <h2>Cities Covered Across the U.S.</h2>
+      <p class="lead">LoCALE draws from thousands of municipalities nationwide, providing coverage far beyond existing federal datasets.</p>
+      <div class="map-placeholder">
+        <svg viewBox="0 0 960 600" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;">
+          <!-- USA outline simplified -->
+          <rect width="960" height="600" fill="#eef2f7" rx="12"/>
+          <!-- Decorative US shape approximation -->
+          <path d="M120,150 L820,150 L860,200 L860,420 L780,460 L700,440 L600,460 L500,450 L400,470 L280,450 L180,440 L100,400 L80,320 L100,220 Z"
+                fill="#d0daea" stroke="#b0bfd4" stroke-width="2"/>
+          <!-- Scatter dots representing cities -->
+          <!-- Northeast cluster -->
+          <circle cx="760" cy="175" r="5" fill="#c8973a" opacity="0.85"/>
+          <circle cx="775" cy="185" r="4" fill="#c8973a" opacity="0.75"/>
+          <circle cx="755" cy="190" r="6" fill="#c8973a" opacity="0.9"/>
+          <circle cx="740" cy="180" r="4" fill="#c8973a" opacity="0.7"/>
+          <circle cx="780" cy="195" r="3" fill="#c8973a" opacity="0.65"/>
+          <!-- Mid-Atlantic -->
+          <circle cx="730" cy="215" r="7" fill="#0a1e3d" opacity="0.7"/>
+          <circle cx="718" cy="225" r="4" fill="#c8973a" opacity="0.8"/>
+          <circle cx="745" cy="220" r="5" fill="#0a1e3d" opacity="0.6"/>
+          <!-- Southeast -->
+          <circle cx="640" cy="320" r="6" fill="#c8973a" opacity="0.8"/>
+          <circle cx="660" cy="340" r="5" fill="#0a1e3d" opacity="0.7"/>
+          <circle cx="680" cy="355" r="4" fill="#c8973a" opacity="0.75"/>
+          <circle cx="620" cy="350" r="5" fill="#0a1e3d" opacity="0.65"/>
+          <circle cx="700" cy="330" r="4" fill="#c8973a" opacity="0.7"/>
+          <circle cx="710" cy="360" r="6" fill="#0a1e3d" opacity="0.6"/>
+          <!-- Florida -->
+          <circle cx="680" cy="400" r="4" fill="#c8973a" opacity="0.7"/>
+          <circle cx="700" cy="415" r="5" fill="#0a1e3d" opacity="0.65"/>
+          <!-- Midwest -->
+          <circle cx="520" cy="220" r="7" fill="#0a1e3d" opacity="0.75"/>
+          <circle cx="540" cy="240" r="5" fill="#c8973a" opacity="0.8"/>
+          <circle cx="560" cy="230" r="4" fill="#0a1e3d" opacity="0.65"/>
+          <circle cx="500" cy="250" r="6" fill="#c8973a" opacity="0.7"/>
+          <circle cx="580" cy="250" r="4" fill="#0a1e3d" opacity="0.6"/>
+          <circle cx="490" cy="270" r="5" fill="#c8973a" opacity="0.75"/>
+          <circle cx="610" cy="260" r="5" fill="#0a1e3d" opacity="0.7"/>
+          <circle cx="550" cy="280" r="4" fill="#c8973a" opacity="0.65"/>
+          <!-- Great Plains -->
+          <circle cx="390" cy="230" r="5" fill="#0a1e3d" opacity="0.65"/>
+          <circle cx="410" cy="260" r="4" fill="#c8973a" opacity="0.7"/>
+          <circle cx="370" cy="270" r="4" fill="#0a1e3d" opacity="0.6"/>
+          <circle cx="430" cy="290" r="5" fill="#c8973a" opacity="0.65"/>
+          <!-- South Central -->
+          <circle cx="450" cy="350" r="6" fill="#0a1e3d" opacity="0.7"/>
+          <circle cx="470" cy="370" r="5" fill="#c8973a" opacity="0.75"/>
+          <circle cx="430" cy="370" r="4" fill="#0a1e3d" opacity="0.65"/>
+          <circle cx="500" cy="355" r="4" fill="#c8973a" opacity="0.6"/>
+          <!-- Mountain West -->
+          <circle cx="270" cy="250" r="5" fill="#0a1e3d" opacity="0.65"/>
+          <circle cx="290" cy="280" r="4" fill="#c8973a" opacity="0.7"/>
+          <circle cx="250" cy="290" r="5" fill="#0a1e3d" opacity="0.6"/>
+          <circle cx="310" cy="310" r="4" fill="#c8973a" opacity="0.65"/>
+          <!-- Pacific Coast -->
+          <circle cx="150" cy="220" r="6" fill="#0a1e3d" opacity="0.75"/>
+          <circle cx="160" cy="250" r="5" fill="#c8973a" opacity="0.8"/>
+          <circle cx="145" cy="275" r="7" fill="#0a1e3d" opacity="0.7"/>
+          <circle cx="155" cy="300" r="5" fill="#c8973a" opacity="0.7"/>
+          <circle cx="165" cy="330" r="6" fill="#0a1e3d" opacity="0.65"/>
+          <circle cx="155" cy="360" r="4" fill="#c8973a" opacity="0.7"/>
+          <!-- Texas -->
+          <circle cx="380" cy="370" r="7" fill="#0a1e3d" opacity="0.75"/>
+          <circle cx="360" cy="390" r="5" fill="#c8973a" opacity="0.7"/>
+          <circle cx="400" cy="395" r="4" fill="#0a1e3d" opacity="0.65"/>
+          <circle cx="345" cy="360" r="4" fill="#c8973a" opacity="0.6"/>
+          <!-- Legend -->
+          <rect x="30" y="480" width="200" height="90" rx="8" fill="white" opacity="0.9"/>
+          <circle cx="55" cy="505" r="7" fill="#c8973a"/>
+          <text x="70" y="510" font-family="Georgia, serif" font-size="13" fill="#1a1a2e">City with records</text>
+          <circle cx="55" cy="530" r="7" fill="#0a1e3d"/>
+          <text x="70" y="535" font-family="Georgia, serif" font-size="13" fill="#1a1a2e">Major metro area</text>
+          <text x="30" y="560" font-family="Georgia, serif" font-size="11" fill="#5a6275" font-style="italic">Placeholder — final map coming soon</text>
+        </svg>
+      </div>
+    </div>
+
+    <!-- PROCESS INFOGRAPHIC -->
+    <div class="visual-section">
+      <p class="section-label">How the Data Works</p>
+      <h2>From Event to Record</h2>
+      <p class="lead">LoCALE integrates three stages of the law enforcement process into a unified framework.</p>
+      <div class="process-flow">
+
+        <div class="process-step">
+          <div class="process-icon" style="background:#0a1e3d;">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="18" cy="18" r="16" stroke="#c8973a" stroke-width="2"/>
+              <path d="M18 10 L18 18 L24 21" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="process-step-num">01</div>
+          <h3>Dispatch</h3>
+          <p>A call for service is received. Law enforcement units are deployed. LoCALE captures this first stage — the moment police are tasked with responding.</p>
+          <div class="process-tag">911 calls · Service requests · Response times</div>
         </div>
-        <p>&copy; 2026 LoCALE Project</p>
-    </footer>
+
+        <div class="process-arrow">→</div>
+
+        <div class="process-step">
+          <div class="process-icon" style="background:#123260;">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="10" width="20" height="18" rx="2" stroke="#c8973a" stroke-width="2"/>
+              <path d="M13 16 H23 M13 20 H19" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="process-step-num">02</div>
+          <h3>Incident</h3>
+          <p>Officers document a crime event. An incident report is filed, capturing offense type, location, victim and offender characteristics, and other details.</p>
+          <div class="process-tag">Crime type · Location · Demographics</div>
+        </div>
+
+        <div class="process-arrow">→</div>
+
+        <div class="process-step">
+          <div class="process-icon" style="background:#c8973a;">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="18" cy="14" r="5" stroke="white" stroke-width="2"/>
+              <path d="M10 28 C10 22 26 22 26 28" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="process-step-num">03</div>
+          <h3>Arrest</h3>
+          <p>An individual is apprehended. Arrest records detail the charge, offender characteristics, and the arresting agency — enabling analysis of enforcement patterns.</p>
+          <div class="process-tag">Charges · Offender info · Agency</div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand">Lo<span>CALE</span>
+            <p>Local Crime &amp; Law Enforcement Project</p>
+          </div>
+        </div>
+        <div class="logos">
+          <img src="ucla-logo.png" alt="UCLA">
+          <img src="economics-logo.png" alt="Economics Department">
+        </div>
+        <nav class="footer-links">
+          <a href="index.html">About</a>
+          <a href="team.html">Team</a>
+          <a href="data.html">Data &amp; Access</a>
+          <a href="projects.html">Projects</a>
+          <a href="funding.html">Funding</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 LoCALE Project. UCLA Luskin School of Public Affairs.</p>
+        <p>LoCALEprojectemail@ucla.edu</p>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>

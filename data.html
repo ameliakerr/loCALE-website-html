@@ -1,42 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>LoCALE - Data & Access</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LoCALE — Data &amp; Access</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <a href="index.html">About</a>
-        <a href="team.html">Team</a>
-        <a href="data.html">Data & Access</a>
-        <a href="projects.html">Projects</a>
-        <a href="funding.html">Funding</a>
-        <a href="faq.html">FAQ</a>
-        <a href="contact.html">Contact</a>
-    </nav>
 
-    <h1>Data Information</h1>
-    <p>The LoCALE database compiles harmonized micro-level arrest, incident, and dispatch records from thousands of municipalities across the United States. To address inconsistencies across agencies, LoCALE standardizes offense classifications and harmonizes variable definitions to ensure comparability across cities and over time. Detailed documentation of variable construction and data processing decisions is available in the accompanying codebooks.</p>
-    
-    <h3>Information on geographic coverage, time periods, and data access procedures is provided below.</h3>
-    <ul>
-        <li>Arrest: Records of individuals who have been apprehended by law enforcement officers.</li>
-        <li>Incident: Reports of crime events that require police attention.</li>
-        <li>Dispatch: Real-time communication and deployment of police units in response to calls for</li>
-    </ul>
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand" style="text-decoration:none;">Lo<span>CALE</span></a>
+      <a href="index.html" class="nav-link">About</a>
+      <a href="team.html" class="nav-link">Team</a>
+      <a href="data.html" class="nav-link active">Data &amp; Access</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="funding.html" class="nav-link">Funding</a>
+      <a href="faq.html" class="nav-link">FAQ</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+  </nav>
 
-    <div class="download-box">
-        <h2>Access the Data</h2>
-        <p>The data is currently hosted on the ICPSR platform. Click the button below to visit the repository.</p>
-        <a href="https://www.icpsr.umich.edu/" class="btn" target="_blank">View Data on ICPSR</a>
+  <div class="page-header">
+    <div class="page-header-inner">
+      <p class="eyebrow">Data &amp; Access</p>
+      <h1>The LoCALE Database</h1>
+      <p>Harmonized micro-level records from thousands of municipalities, standardized for cross-jurisdiction comparability.</p>
+    </div>
+  </div>
+
+  <div class="main-content">
+
+    <div class="content-card">
+      <p class="section-label">Overview</p>
+      <h2>About the Data</h2>
+      <p>The LoCALE database compiles harmonized micro-level arrest, incident, and dispatch records from thousands of municipalities across the United States. To address inconsistencies across agencies, LoCALE standardizes offense classifications and harmonizes variable definitions to ensure comparability across cities and over time.</p>
+      <p>Detailed documentation of variable construction and data processing decisions is available in the accompanying codebooks.</p>
     </div>
 
-    <footer>
-        <div class="logos">
-            <img src="ucla-logo.png" alt="UCLA">
-            <img src="economics-logo.png" alt="Economics Department">
+    <p class="section-label" style="margin-top: 40px;">Record Types</p>
+    <h2 style="margin-bottom: 20px;">What's Included</h2>
+    <div class="data-grid">
+      <div class="data-card">
+        <h3>⚖️ Arrest Records</h3>
+        <p>Records of individuals who have been apprehended by law enforcement officers, including offense type, offender characteristics, and jurisdiction.</p>
+      </div>
+      <div class="data-card">
+        <h3>📋 Incident Reports</h3>
+        <p>Reports of crime events that require police attention, extending coverage to low-level offenses frequently excluded from national datasets.</p>
+      </div>
+      <div class="data-card">
+        <h3>📡 Dispatch Data</h3>
+        <p>Real-time communication and deployment records of police units in response to calls for service — the first centralized source of this kind.</p>
+      </div>
+    </div>
+
+    <div class="access-box">
+      <div>
+        <h2>Access the Data</h2>
+        <p>The LoCALE dataset is currently hosted on the ICPSR platform. Visit the repository to access codebooks, data files, and documentation.</p>
+      </div>
+      <a href="https://www.icpsr.umich.edu/" class="btn" target="_blank">View Data on ICPSR →</a>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand">Lo<span>CALE</span>
+            <p>Local Crime &amp; Law Enforcement Project</p>
+          </div>
         </div>
-        <p>&copy; 2026 LoCALE Project</p>
-    </footer>
+        <div class="logos">
+          <img src="ucla-logo.png" alt="UCLA">
+          <img src="economics-logo.png" alt="Economics Department">
+        </div>
+        <nav class="footer-links">
+          <a href="index.html">About</a>
+          <a href="team.html">Team</a>
+          <a href="data.html">Data &amp; Access</a>
+          <a href="projects.html">Projects</a>
+          <a href="funding.html">Funding</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 LoCALE Project. UCLA Luskin School of Public Affairs.</p>
+        <p>LoCALEprojectemail@ucla.edu</p>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
