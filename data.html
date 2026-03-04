@@ -48,20 +48,67 @@
 
     <p class="section-label" style="margin-top: 40px;">Record Types</p>
     <h2 style="margin-bottom: 20px;">What's Included</h2>
-    <div class="data-grid">
-      <div class="data-card">
-        <h3>⚖️ Arrest Records</h3>
-        <p>Records of individuals who have been apprehended by law enforcement officers.</p>
+
+    <div class="data-grid data-grid-icons">
+
+    <!-- Dispatch -->
+    <div class="data-card data-card-icon">
+      <div class="process-icon" style="background:#c8973a;">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7 4.5C7 4.5 6 4.5 5.5 5.5L4.5 7.5C4.5 7.5 4 9 6.5 12C9 15 12 17 14.5 17.5L16.5 16C17.5 15.5 17.5 14.5 17.5 14.5L15.5 13C15 12.5 14.5 12.5 14 13L13 14C13 14 11 12.5 9 10C8.5 9.5 9.5 8.5 9.5 8.5C10 8 10 7.5 9.5 7L7 4.5Z"
+          stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
       </div>
-      <div class="data-card">
-        <h3>📋 Incident Reports</h3>
-        <p>Reports of crime events that require police attention.</p>
-      </div>
-      <div class="data-card">
-        <h3>📡 Dispatch Data</h3>
-        <p>Real-time communication and deployment records of police units in response to calls for service.</p>
-      </div>
+      <h3>Dispatch Data</h3>
+      <p>Real-time communication and deployment records of police units in response to calls for service.</p>
     </div>
+
+    <!-- Incident -->
+    <div class="data-card data-card-icon">
+      <div class="process-icon" style="background:#123260;">
+        <svg width="30" height="30" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="8" y="10" width="20" height="18" rx="2" stroke="#c8973a" stroke-width="1.5"/>
+          <path d="M13 16 H23 M13 20 H19" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <h3>Incident Reports</h3>
+      <p>Reports of crime events that require police attention.</p>
+    </div>
+
+    <!-- Arrest -->
+    <div class="data-card data-card-icon">
+      <div class="process-icon" style="background:#c8973a;">
+        <svg width="30" height="30" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="18" cy="14" r="5" stroke="white" stroke-width="1.5"/>
+          <path d="M10 28 C10 22 26 22 26 28" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <h3>Arrest Records</h3>
+      <p>Records of individuals who have been apprehended by law enforcement officers.</p>
+    </div>
+
+  </div>
+
+  <style>
+    /* Makes the record type cards look consistent with the home icons */
+    .data-grid-icons .data-card-icon{
+      text-align: left;
+    }
+
+    .data-grid-icons .process-icon{
+      width: 74px;
+      height: 74px;
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 14px;
+    }
+
+    .data-grid-icons .data-card-icon h3{
+      margin-top: 0;
+    }
+  </style>
 
   </div>
 
