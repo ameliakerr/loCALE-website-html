@@ -5,6 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LoCALE — Local Crime and Law Enforcement Project</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- OPTIONAL: If you prefer not to edit style.css, keep these styles here.
+       Otherwise, move this <style> block into style.css. -->
+  <style>
+    /* --- HERO split layout (text left, carousel right) --- */
+    .hero-inner.hero-split{
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 28px;
+      align-items: center;
+    }
+    @media (max-width: 900px){
+      .hero-inner.hero-split{ grid-template-columns: 1fr; }
+    }
+
+    /* --- Carousel styles (fade) --- */
+    .hero-carousel{ min-width: 0; }
+
+    .carousel{
+      position: relative;
+      border-radius: 18px;
+      overflow: hidden;
+      background: #eef2f7;
+      border: 1px solid rgba(18, 50, 96, 0.12);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+      aspect-ratio: 4 / 3;
+    }
+
+    .carousel-track{
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .carousel-slide{
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    .carousel-slide.is-active{
+      opacity: 1;
+    }
+
+    .carousel-slide img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  </style>
 </head>
 <body>
 
@@ -21,12 +73,41 @@
     </div>
   </nav>
 
+  <!-- HERO with carousel on the right -->
   <section class="hero">
-    <div class="hero-inner">
-      <p class="hero-eyebrow">Local Crime and Law Enforcement Project</p>
-      <h1>A National Database for<br>Public Safety Research</h1>
-      <p class="hero-sub">LoCALE compiles micro-level arrest, incident, and dispatch records from thousands of cities across the United States; giving researchers and policymakers unprecedented granularity.</p>
-      <a href="data.html" class="hero-cta">Access the Data →</a>
+    <div class="hero-inner hero-split">
+
+      <!-- LEFT: your hero text -->
+      <div class="hero-copy">
+        <p class="hero-eyebrow">Local Crime and Law Enforcement Project</p>
+        <h1>A National Database for<br>Public Safety Research</h1>
+        <p class="hero-sub">
+          LoCALE compiles micro-level arrest, incident, and dispatch records from thousands of cities across the United States; giving researchers and policymakers unprecedented granularity.
+        </p>
+        <a href="data.html" class="hero-cta">Access the Data →</a>
+      </div>
+
+      <!-- RIGHT: auto-switching carousel -->
+      <div class="hero-carousel" aria-label="LoCALE photo carousel">
+        <div class="carousel">
+          <div class="carousel-track">
+
+            <div class="carousel-slide is-active">
+              <img src="carousel-1.png" alt="LoCALE carousel image 1">
+            </div>
+
+            <div class="carousel-slide">
+              <img src="carousel-2.jpg" alt="LoCALE carousel image 2">
+            </div>
+
+            <div class="carousel-slide">
+              <img src="carousel-3.jpg" alt="LoCALE carousel image 3">
+            </div>
+
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -79,7 +160,7 @@
           <circle cx="730" cy="215" r="7" fill="#0a1e3d" opacity="0.7"/>
           <circle cx="718" cy="225" r="4" fill="#c8973a" opacity="0.8"/>
           <circle cx="745" cy="220" r="5" fill="#0a1e3d" opacity="0.6"/>
- 
+
           <circle cx="640" cy="320" r="6" fill="#c8973a" opacity="0.8"/>
           <circle cx="660" cy="340" r="5" fill="#0a1e3d" opacity="0.7"/>
           <circle cx="680" cy="355" r="4" fill="#c8973a" opacity="0.75"/>
@@ -146,10 +227,7 @@
           <div class="process-icon" style="background:#c8973a;">
             <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M7 4.5C7 4.5 6 4.5 5.5 5.5L4.5 7.5C4.5 7.5 4 9 6.5 12C9 15 12 17 14.5 17.5L16.5 16C17.5 15.5 17.5 14.5 17.5 14.5L15.5 13C15 12.5 14.5 12.5 14 13L13 14C13 14 11 12.5 9 10C8.5 9.5 9.5 8.5 9.5 8.5C10 8 10 7.5 9.5 7L7 4.5Z"
-              stroke="white"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"/>
+                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </div>
           <div class="process-step-num">01</div>
@@ -222,6 +300,20 @@
       </div>
     </div>
   </footer>
+
+  <!-- Auto-switching carousel script -->
+  <script>
+    const slides = document.querySelectorAll(".carousel-slide");
+    let index = 0;
+
+    function changeSlide() {
+      slides[index].classList.remove("is-active");
+      index = (index + 1) % slides.length;
+      slides[index].classList.add("is-active");
+    }
+
+    setInterval(changeSlide, 4000); // change every 4 seconds
+  </script>
 
 </body>
 </html>
