@@ -6,6 +6,7 @@
   <title>LoCALE — Funding</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <nav>
@@ -23,20 +24,50 @@
 
   <div class="page-header">
     <div class="page-header-inner">
-      <p class="eyebrow">Support</p>
-      <h1>Funding &amp; Acknowledgments</h1>
-      <p>LoCALE is made possible through the support of organizations committed to evidence-based public policy.</p>
+      <p class="eyebrow">Funding</p>
+      <h1>Project Funders</h1>
+      <p>LoCALE is supported by the following organizations.</p>
     </div>
   </div>
 
   <div class="main-content">
 
-    <div class="funder-card">
-      <div class="funder-badge">🏛️</div>
-      <div>
-        <h3><a href="https://www.arnoldventures.org/" target="_blank">Arnold Ventures</a></h3>
-        <p>The development of LoCALE was made possible through the generous support of Arnold Ventures. We are deeply grateful for their commitment to promoting evidence-based policy solutions that maximize opportunity and minimize injustice.</p>
-      </div>
+    <div class="content-card">
+      <p class="section-label">Support</p>
+      <h2>Funding Partners</h2>
+      <p>
+        We are grateful for the support of our funding partners. Click a logo to learn more about each organization.
+      </p>
+    </div>
+
+    <!-- LOGO GRID -->
+    <div class="funder-grid" aria-label="Funder logos">
+
+      <!-- 1) Arnold Ventures -->
+      <a class="funder-card" href="https://www.arnoldventures.org/" target="_blank" rel="noopener">
+        <img src="Arnold-Ventures-Logo.png" alt="Arnold Ventures logo" loading="lazy">
+      </a>
+
+      <!-- 2) Russell Sage Foundation -->
+      <a class="funder-card" href="https://www.russellsage.org/" target="_blank" rel="noopener">
+        <img src="russell-sage-foundation- logo.webp" alt="Russell Sage Foundation logo" loading="lazy">
+      </a>
+
+      <!-- 3) Ziman Center for Real Estate -->
+      <a class="funder-card" href="https://www.anderson.ucla.edu/about/centers/ucla-ziman-center-for-real-estate" target="_blank" rel="noopener">
+        <img src="Ziman-Logo.jpg" alt="Ziman Center for Real Estate logo" loading="lazy">
+      </a>
+
+      <!-- 4) California Center for Population Research -->
+      <a class="funder-card" href="https://ccpr.ucla.edu/" target="_blank" rel="noopener">
+        <img src="California-Center-for-Population-Research-Logo.png" alt="California Center for Population Research logo" loading="lazy">
+      </a>
+
+      <!-- 5) UCLA Institute on Inequality and Democracy -->
+      <a class="funder-card" href="https://challengeinequality.luskin.ucla.edu/" target="_blank" rel="noopener">
+        <img src="UCLA-Institute-on-Inequality-and-Democracy-Logo.png" alt="UCLA Institute on Inequality and Democracy logo" loading="lazy">
+      </a>
+
     </div>
 
   </div>
@@ -69,6 +100,60 @@
       </div>
     </div>
   </footer>
+
+  <!-- Page-specific styling (you can move this into style.css) -->
+  <style>
+    .funder-grid{
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+      align-items: stretch;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px){
+      .funder-grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 520px){
+      .funder-grid{ grid-template-columns: 1fr; }
+    }
+
+    .funder-card{
+      background: #fff;
+      border: 1px solid rgba(18, 50, 96, 0.12);
+      border-radius: 18px;
+      padding: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+      min-height: 120px; /* keeps everything aligned */
+    }
+
+    .funder-card:hover{
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+      border-color: rgba(200, 151, 58, 0.55);
+    }
+
+    .funder-card img{
+      max-width: 180px;
+      max-height: 60px;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      display: block;
+      filter: none;
+    }
+
+    /* Optional: if some logos are tall, this keeps the “visual size” consistent */
+    .funder-card img.tall{
+      max-height: 72px;
+      max-width: 160px;
+    }
+  </style>
 
 </body>
 </html>
