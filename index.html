@@ -318,12 +318,21 @@
   <!-- Auto-switching carousel script -->
   <script>
     const slides = document.querySelectorAll(".carousel-slide");
+    const caption = document.getElementById("carousel-caption");
     let index = 0;
+
+    const captions = [
+      "Gordon Parks, 1957",
+      "NYPD CompStat Meeting, Harvard Kennedy School, Ash Center for Democratic Governance and Innovation, 1990s",
+      "Charles Booth, 1889",
+      "Leonard Freed, 1978"
+    ];
 
     function changeSlide() {
       slides[index].classList.remove("is-active");
       index = (index + 1) % slides.length;
       slides[index].classList.add("is-active");
+      caption.textContent = captions[index];
     }
 
     setInterval(changeSlide, 4000); // change every 4 seconds
