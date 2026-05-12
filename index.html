@@ -55,9 +55,10 @@
       display: block;
     }
 
+    /* CHANGED: left-aligned, moved up (margin-top: 4px instead of 10px) */
     .carousel-caption {
-      text-align: center;
-      margin-top: 10px;
+      text-align: left;
+      margin-top: 4px;
       font-size: 0.88rem;
       color: rgba(255, 255, 255, 0.72);
       font-style: italic;
@@ -118,8 +119,8 @@
         </div>
       </div>
 
-      <!-- Caption sits below the photo box, updates with each slide -->
-      <p class="carousel-caption" id="carousel-caption">Author Name, Year</p>
+      <!-- CHANGED: removed default "Author Name, Year" placeholder text -->
+      <p class="carousel-caption" id="carousel-caption"></p>
   </div>
 
     </div>
@@ -327,6 +328,9 @@
       "Charles Booth, 1889",
       "Leonard Freed, 1978"
     ];
+
+    // Set the first caption immediately on load (no placeholder)
+    caption.textContent = captions[index];
 
     function changeSlide() {
       slides[index].classList.remove("is-active");
